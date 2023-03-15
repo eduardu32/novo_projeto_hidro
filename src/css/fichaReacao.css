@@ -1,0 +1,165 @@
+/* CSS para fichaReacao.html */
+
+/* Estilos gerais */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Formulário */
+#entrada{
+    float: left;
+    width: 500px;
+   
+    
+}
+form {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #000;
+    
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #000000;
+    font-size: 14px;
+}
+
+form input[type="number"],
+form input[type="date"],
+form input[type="time"],
+form input[type="text"],
+form input[type="checkbox"] {
+    width: 100%;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #006666;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #004040;
+}
+
+form label + input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+/* Tabela */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #000;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #006666;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* Responsividade */
+
+@media (max-width: 767px) {
+    form input[type="number"],
+    form input[type="date"],
+    form input[type="time"],
+    form input[type="text"],
+    form input[type="checkbox"] {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    form label + input[type="checkbox"] {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    form {
+    padding: 10px;
+    }
+    form label {
+        text-align: right;
+    }
+    
+    form input[type="number"],
+    form input[type="date"],
+    form input[type="time"],
+    form input[type="text"],
+    form input[type="checkbox"] {
+        display: inline-block;
+        width: 60%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    
+    form input[type="checkbox"] {
+        display: inline-block;
+        width: 20%;
+        margin-right: 10px;
+    }
+    
+    form label + input[type="checkbox"] {
+        margin-top: 0px;
+    }
+    
+    table th,
+    table td {
+        padding: 5px;
+        font-size: 14px;
+    }}
+
+   

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fichaReacao.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/reator2.js"></script>
+</head>
+<body>
+
+    <div>
+        <h1>Tabela Reator 2 - Última batelada</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Batelada</th>
+              <th>Data</th>
+              <th>Hora</th>
+              <th>Hidrogênio Inicial</th>
+              <th>Início Aquecimento</th>
+              <th>Final Aquecimento</th>
+              <th>Temperatura</th>
+              <th>Próxima Amostra</th>
+              <th>Iodo</th>
+              <th>Catalisador</th>
+              <th>Início Resfriamento</th>
+              <th>Operador</th>
+              <th>Hidrogênio Final</th>
+              <th>Finalizado</th>
+            </tr>
+          </thead>
+          <tbody id="corpo-tabela">
+            
+          </tbody>
+        </table>
+    
+        </div>
+    
+    <div>
+        <form id="entrada" onsubmit="event.preventDefault(); entrada()">
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data"><br>
+      
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora"><br>
+      
+            <label for="hidrogenio">Hidrogênio:</label>
+            <input type="number" id="hidrogenio" name="hidrogenioInicial"><br>
+      
+            <label for="numeroCarreta">Numero da Carreta:</label>
+            <input type="number" id="numeroCarreta" name="numeroCarreta"><br>
+      
+            <label for="inicioAquecimento">Início do Aquecimento:</label>
+            <input type="time" id="inicioAquecimento" name="inicioAquecimento"><br>
+      
+            <label for="finalAquecimento">Final do Aquecimento:</label>
+            <input type="time" id="finalAquecimento" name="finalAquecimento"><br>
+      
+            <label for="operador">Operador:</label>
+            <input type="text" id="operador" name="operador"><br>
+      
+            <label for="iodo">Iodo:</label>
+            <input type="number" id="iodo" name="iodo"><br>
+      
+            <label for="proximaAmostra">Próxima Amostra:</label>
+            <input type="time" id="proximaAmostra" name="proximaAmostra"><br>
+      
+            <label for="inicioResfriamento">Início do Resfriamento:</label>
+            <input type="time" id="inicioResfriamento" name="inicioResfriamento"><br>
+            
+            <label for="finalResfriamento">Final do Resfriamento:</label>
+            <input type="time" id="finalResfriamento" name="finalResfriamento"><br>
+
+            <label for="temperatura">Temperatura:</label>
+            <input type="number" id="temperatura" name="temperatura"><br>
+
+            <label for="Catalisador">Catalisador:</label>
+            <input type="number" id="Catalisador" name="Catalisador"><br>
+      
+            <label for="batelada">Batelada:</label>
+            <input type="number" id="batelada" name="batelada"><br>
+      
+            <label for="finalizado">Finalizado:</label>
+            <input type="checkbox" id="finalizado" name="finalizado"><br>
+      
+            <input id="botao" type="submit" value="Enviar">
+       
+          </form>
+    </div>
+
+
+
+</body>
+</html>
