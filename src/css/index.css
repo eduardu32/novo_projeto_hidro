@@ -31,7 +31,7 @@ footer{
     height: 4rem;
     width: 100%;
     display: flex;
-    margin-top: 52.2rem;
+    margin-top: 1rem;
     justify-content: center;
 }
 ul{
@@ -52,9 +52,65 @@ ul{
     box-shadow: 0px 0px 10px 2px #000;
     border: none;
     border-radius: 1rem;
+    float: right;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
     
 }
 .botaolateral:hover{
+    background-color: #c8cc2c;
+    transform: scale(1.1);
+}
+main{
+    display: flex;
     background-color: #004040;
-    width: 22rem;
+    width: 99rem;
+    height: 50rem;
+    margin-top: 1rem;
+    border: solid 2px #00afaf;
+    margin-left: 16%;
+    box-shadow: 0px 0px 10px 2px #000;
+
+}
+#iniciarbotao{
+    margin-top: 1rem;
+    font-size: 4rem;
+    width: 50rem;
+    position: absolute;
+    margin-left: 20%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #ffffff94;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #000;
+}
+
+table th,
+table td {
+  
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #000000;
+
+}
+
+table th {
+    background-color: #012424;
+    color: #ffffff;
+    font-weight: normal;
+    
+}
+#tableadiv{
+    margin-top: 7rem;
+    margin-left: 2.5rem;
+}
+#verBateladas{
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 2.5rem;
+    border-radius: 0;
 }

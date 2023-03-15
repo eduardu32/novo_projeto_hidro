@@ -123,3 +123,33 @@ async function preencherInputs() {
 preencherInputs()
 
 
+function recarregarAPagina(){
+    window.location.reload();
+} 
+
+function baixartabela() {
+    const rows = document.querySelectorAll('#corpo-tabela tr');
+    let csvContent = "data:text/csv;charset=utf-8,";
+    const columnNames = [];
+
+    // Adicionar o nome das colunas
+    document.querySelectorAll('#corpo-tabela th').forEach(th => columnNames.push(th.innerText));
+    csvContent += columnNames.join(",") + "\n";
+
+    // Adicionar os dados da tabela
+    rows.forEach(row => {
+        const data = [];
+        row.querySelectorAll('td').forEach(td => data.push(td.innerText));
+        csvContent += data.join(",") + "\n";
+    });
+
+    // Criar o link de download
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "tabela.csv");
+    document.body.appendChild(link);
+
+    // Clicar no link para iniciar o download
+    link.click();
+}

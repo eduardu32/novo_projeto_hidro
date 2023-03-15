@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/reator2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>reator 2</title>
+</head>
+<body>
+    <nav>
+        <h1 id="titulo">VEGETALLIS</h1>
+    </nav>
+    <div id="menuLateral">
+        <ul id="botoesLateral">
+            <li><a href="./index.html"><button class="botaolateral">INICIO</button></a></li>
+            <li><a href="./reator2.html"><button class="botaolateral">REATOR 2</button></a></li> 
+            <li><a><button class="botaolateral">REATOR 3</button></a></li>
+            <li><a><button class="botaolateral">REATOR 4</button></a></li>
+            <li><a><button class="botaolateral">REATOR 5</button></a></li>
+        </ul>
+    </div>
+
+    <main>
+        <a href="../htmls/reacao.html" target="_blank"><button class="botaolateral" id="iniciarbotao">INICIAR REAÇÃO</button></a>
+         <div id="tableadiv">
+                <h1 id="titulo">ULTIMA BATELADA</h1>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Batelada</th>
+                      <th>Data</th>
+                      <th>Hora</th>
+                      <th>Hidrogênio Inicial</th>
+                      <th>Início Aquecimento</th>
+                      <th>Final Aquecimento</th>
+                      <th>Temperatura</th>
+                      <th>Próxima Amostra</th>
+                      <th>Iodo</th>
+                      <th>Catalisador</th>
+                      <th>Início Resfriamento</th>
+                      <th>Operador</th>
+                      <th>Hidrogênio Final</th>
+                      <th>Finalizado</th>
+                    </tr>
+                  </thead>
+                  <tbody id="corpo-tabela">
+                    
+                  </tbody>
+                </table>
+            <script >gerarUltimaBatelada()</script>
+        </div>
+        <button onclick="baixartabela()" class="botaolateral" id="verBateladas">VER TODAS AS BATELADAS</button>
+
+
+    </main>
+
+
+
+
+    <footer><h1>           ashduhasuidiuashiudhauishduiasuidha</h1></footer>
+</html>
