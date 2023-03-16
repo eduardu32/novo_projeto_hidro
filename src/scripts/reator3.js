@@ -1,7 +1,7 @@
 
 
 async function entrada() {
-    const url = 'http://localhost:3000/reator2/atualizar2';
+    const url = 'http://localhost:3000/reator2/atualizar3';
 
     const data = {
         data: document.getElementById('data').value,
@@ -92,15 +92,15 @@ async function gerarTabela(URL, tabela) {
 }
 
 async function gerarUltimaBatelada() {
-    const response = await axios.get('http://localhost:3000/reator2/ultimaBatelada2')
+    const response = await axios.get('http://localhost:3000/reator2/ultimaBatelada3')
     const dados = response.data
-    rota = `http://localhost:3000/reator2/batelada2/${dados.batelada}`;
+    rota = `http://localhost:3000/reator2/batelada3/${dados.batelada}`;
     gerarTabela(rota, 'corpo-tabela')
 }
 gerarUltimaBatelada()
 
 async function preencherInputs() {
-    const response = await axios.get('http://localhost:3000/reator2/ultimaBatelada2')
+    const response = await axios.get('http://localhost:3000/reator2/ultimaBatelada3')
     const dados = response.data
 
     document.getElementById("data").value = dados.data;
