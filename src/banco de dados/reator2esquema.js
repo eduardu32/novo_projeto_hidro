@@ -15,6 +15,7 @@ const Reator2esquema = mongoose.model('Reator2esquema',{
   temperatura: Number,
   Catalisador: Number,
   batelada: String,
+  produto: String,
   finalizado: Boolean,
 
 });

@@ -18,6 +18,7 @@ async function entrada() {
         temperatura: parseInt(document.getElementById('temperatura').value),
         Catalisador: parseInt(document.getElementById('Catalisador').value),
         batelada: document.getElementById('batelada').value,
+        produto: document.getElementById('produto').value,
         finalizado: document.getElementById('finalizado').checked
     };
 
@@ -45,8 +46,8 @@ async function gerarTabela(URL, tabela) {
             colunaData.textContent = dados[i].data;
             const colunaHora = document.createElement('td');
             colunaHora.textContent = dados[i].hora;
-            const colunaHidrogenioInicial = document.createElement('td');
-            colunaHidrogenioInicial.textContent = dados[i].hidrogenioInicial;
+            const hidrogenio = document.createElement('td');
+            hidrogenio.textContent = dados[i].hidrogenio;
             const colunaInicioAquecimento = document.createElement('td');
             colunaInicioAquecimento.textContent = dados[i].inicioAquecimento;
             const colunaFinalAquecimento = document.createElement('td');
@@ -63,15 +64,15 @@ async function gerarTabela(URL, tabela) {
             colunaInicioResfriamento.textContent = dados[i].inicioResfriamento;
             const colunaOperador = document.createElement('td');
             colunaOperador.textContent = dados[i].operador;
-            const colunaHidrogenioFinal = document.createElement('td');
-            colunaHidrogenioFinal.textContent = dados[i].hidrogenioFinal;
+            const colunaproduto = document.createElement('td');
+            colunaproduto.textContent = dados[i].produto;
             const colunaFinalizado = document.createElement('td');
             colunaFinalizado.textContent = dados[i].finalizado;
 
             linha.appendChild(colunaBatelada);
             linha.appendChild(colunaData);
             linha.appendChild(colunaHora);
-            linha.appendChild(colunaHidrogenioInicial);
+            linha.appendChild(hidrogenio);
             linha.appendChild(colunaInicioAquecimento);
             linha.appendChild(colunaFinalAquecimento);
             linha.appendChild(colunaTemperatura);
@@ -80,7 +81,7 @@ async function gerarTabela(URL, tabela) {
             linha.appendChild(colunaCatalisador);
             linha.appendChild(colunaInicioResfriamento);
             linha.appendChild(colunaOperador);
-            linha.appendChild(colunaHidrogenioFinal);
+            linha.appendChild(colunaproduto);
             linha.appendChild(colunaFinalizado);
 
             corpoTabela.appendChild(linha);
@@ -116,6 +117,7 @@ async function preencherInputs() {
     document.getElementById("temperatura").value = dados.temperatura;
     document.getElementById("Catalisador").value = dados.Catalisador;
     document.getElementById("batelada").value = dados.batelada;
+    document.getElementById("produto").value = dados.produto;
     document.getElementById("finalizado").value = dados.finalizado;
 
 

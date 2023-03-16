@@ -35,6 +35,7 @@ router.post('/atualizar', async (req,res) => {
     temperatura ,
     Catalisador ,
     batelada,
+    produto,
     finalizado ,
     catalisador
   } =req.body
@@ -54,6 +55,7 @@ router.post('/atualizar', async (req,res) => {
       temperatura ,
       Catalisador ,
       batelada,
+      produto,
       finalizado ,
       catalisador
     })
